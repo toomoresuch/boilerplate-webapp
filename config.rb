@@ -53,6 +53,8 @@ set :images_dir, 'img'
 
 set :js_dir, 'js'
 
+activate :livereload
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -74,4 +76,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+
+  activate :minify_html
 end
