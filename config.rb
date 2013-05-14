@@ -55,6 +55,10 @@ set :js_dir, 'js'
 
 activate :livereload
 
+after_configuration do
+  sprockets.append_path "#{root}/components"
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
