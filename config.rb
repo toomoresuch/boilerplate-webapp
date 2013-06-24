@@ -47,7 +47,7 @@
 #   end
 # end
 
-set :build_dir, 'theme'
+# set :build_dir, 'theme'
 set :css_dir, 'css'
 set :images_dir, 'img'
 set :js_dir, 'js'
@@ -56,7 +56,6 @@ activate :livereload
 
 ignore '*.md'
 ignore 'doc/*'
-ignore 'sozai/*'
 
 after_configuration do
   sprockets.append_path "#{root}/components"
